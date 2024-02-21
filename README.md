@@ -4,7 +4,7 @@ In this project, I developed a To-do List application to demonstrate my understa
 
 The To-do List application showcases various JavaScript language features, including DOM manipulation, event handling, array manipulation, and local storage usage. Through this project, I aimed to deepen my understanding of JavaScript syntax and improve my ability to implement dynamic and user-friendly web interfaces.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.youtube.com/watch?v=Wgsyi3Ktms0)
 
 # Development Environment
 
