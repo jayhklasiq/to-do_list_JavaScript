@@ -131,6 +131,19 @@ window.addEventListener('load', function () {
 
 // Save tasks to local storage when the page is unloaded
 window.addEventListener('beforeunload', function () {
-  localStorage.setItem('todoTasks', JSON.stringify(todoTasks));
-  localStorage.setItem('completedTasks', JSON.stringify(completedTasks));
+  // Check if localStorage needs to be cleared
+  const shouldClearLocalStorage = '';
+
+  if (shouldClearLocalStorage) {
+    localStorage.removeItem('todoTasks');
+    localStorage.removeItem('completedTasks');
+    // Clear the arrays as well
+    todoTasks = [];
+    completedTasks = [];
+  } else {
+    // Save tasks to local storage
+    localStorage.setItem('todoTasks', JSON.stringify(todoTasks));
+    localStorage.setItem('completedTasks', JSON.stringify(completedTasks));
+  }
 });
+
